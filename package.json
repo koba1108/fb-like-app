@@ -13,6 +13,8 @@
   "dependencies": {
     "cross-env": "^5.2.0",
     "nuxt": "^2.4.0",
+    "sass-loader": "^8.0.2",
+    "node-sass": "^4.13.1",
     "@nuxtjs/axios": "^5.3.6"
   },
   "devDependencies": {
