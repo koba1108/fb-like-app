@@ -13,5 +13,6 @@
     height: 8px;
     width: 100%;
     background-color: lightgray;
+    z-index: 10;
   }
 </style>

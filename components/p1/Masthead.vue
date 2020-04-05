@@ -89,9 +89,13 @@
       justify-content: center;
       align-items: center;
       margin: 0 40px;
-
       @media screen and (max-width: 660px) {
         display: none;
+      }
+
+      @media screen and (min-width: 1313px) {
+        width: 660px;
+        margin-left: auto;
       }
 
       .container {

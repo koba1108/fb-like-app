@@ -62,7 +62,7 @@
         }
 
         #content {
-          background-color: green;
+          background-color: #F5F5F5;
           @media screen and (max-width: 790px) {
             grid-column: 1/3;
           }
