@@ -1,17 +1,19 @@
 <template>
   <div id="app">
     <Masthead id="masthead"/>
-    <nav id="navigation">なび</nav>
-    <div id="sidebar">メニュー</div>
+    <Navigator id="navigation"/>
+    <Sidebar id="sidebar"/>
     <nuxt id="content"/>
   </div>
 </template>
 
 <script>
   import Masthead from '../components/p1/Masthead'
+  import Navigator from '../components/p1/Navigator'
+  import Sidebar from '../components/p1/Sidebar'
 
   export default {
-    components: { Masthead },
+    components: { Sidebar, Navigator, Masthead },
     head: {
       bodyAttrs: {
         class: 'p1-app',
@@ -42,28 +44,35 @@
         display: grid;
         grid-template-columns: 72px 1fr; // 横
         grid-template-rows: 56px 1fr; // 縦
+        @media screen and (min-width: 1313px) {
+          grid-template-columns: 240px 1fr; // 横
+        }
 
         #masthead {
           grid-column: 1/3;
         }
 
         #navigation {
-          background-color: orangered;
-          @media screen and (max-width: 500px) {
+          @media screen and (max-width: 790px) {
+            display: none;
+          }
+          @media screen and (min-width: 1313px) {
             display: none;
           }
         }
 
         #content {
           background-color: green;
-          @media screen and (max-width: 500px) {
+          @media screen and (max-width: 790px) {
             grid-column: 1/3;
           }
         }
 
         #sidebar {
-          background-color: bisque;
           display: none;
+          @media screen and (min-width: 1313px) {
+            display: block;
+          }
         }
       }
     }

@@ -83,10 +83,12 @@
 
     .search-box {
       height: 30px;
-      width: 320px;
+      width: 400px;
       display: flex;
+      justify-items: center;
       justify-content: center;
       align-items: center;
+      margin: 0 40px;
 
       @media screen and (max-width: 660px) {
         display: none;
@@ -94,15 +96,11 @@
 
       .container {
         width: 100%;
-        max-width: 400px;
         height: 100%;
         padding: 2px 6px;
         border: solid 1px lightgray;
         border-radius: 2px 0 0 2px;
         border-right: none;
-        display: flex;
-        justify-content: left;
-        align-items: center;
 
         .input-wrapper {
           width: 100%;
