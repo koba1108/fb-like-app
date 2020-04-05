@@ -2,8 +2,18 @@
   <nuxt/>
 </template>
 
+<script>
+  export default {
+    head: {
+      bodyAttrs: {
+        class: 'fb-app'
+      }
+    }
+  }
+</script>
+
 <style lang="scss">
-  body {
+  .fb-app {
     margin: 0;
     padding: 0;
     @media screen and (max-width: 399px) {
